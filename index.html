@@ -10,6 +10,7 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
+    <script src="https://kit.fontawesome.com/53455dd245.js" crossorigin="anonymous"></script>
     <title>New York Times Search</title>
   </head>
   <body>
@@ -17,11 +18,11 @@
       <div class="row justify-content-center">
         <div class="col-md-8">
           <div class="jumbotron text-center">
-            <h4 class="font-weight-bold">New York Times Search</h4>
+            <h4 class="font-weight-bold"><i class="far fa-newspaper"></i> New York Times Search</h4>
           </div>
           <div class="card">
             <div class="card-header font-weight-bold">
-              Search Parameters
+                <i class="far fa-newspaper"></i> Search Parameters
             </div>
             <div class="card-body">
               <form>
@@ -32,7 +33,7 @@
 
                 <div class="form-group">
                   <label for="number-records"
-                    >Number of Records to Retreieve:</label
+                    >Number of Records to Retrieve:</label
                   >
                   <select class="form-control" id="number-records">
                     <option>1</option>
@@ -50,15 +51,17 @@
                   <label for="end-year">End Year (Optional):</label>
                   <input type="text" class="form-control" id="end-year" />
                 </div>
+                <button type="submit" class="btn btn-secondary" id="search-btn"><i class="fas fa-search"></i> Search</button>
+                <button type="submit" class="btn btn-danger" id="clear-btn"><i class="fas fa-trash-alt"></i> Clear Results</button>
               </form>
             </div>
           </div>
           <div class="pt-3">
             <div class="card">
               <div class="card-header font-weight-bold">
-                Top Articles
+                <i class="fas fa-table"></i> Top Articles
               </div>
-              <div class="card-body"></div>
+              <div class="card-body" id="articles-div"></div>
             </div>
           </div>
         </div>
